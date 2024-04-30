@@ -23,6 +23,7 @@ public class HelloTest {
         String value = jedis.get("hello");
 
         assertThat(value, is("world"));
+        System.out.println(value);
     }
 
     @Test
